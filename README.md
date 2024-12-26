@@ -46,7 +46,8 @@ cd cbir_project
 
 
 Créez un environnement virtuel et activez-le :
-```bash
+
+
 
 python -m venv venv
 venv\Scripts\activate     # Sur Windows
@@ -57,7 +58,7 @@ venv\Scripts\activate     # Sur Windows
 
 
 Installez les dépendances pour le backend et le frontend à partir du fichier requirements.txt :
-```bash
+
 pip install -r requirements.txt
 
 ### Étape 4 : Configuration d'Elasticsearch
@@ -68,7 +69,6 @@ Assurez-vous qu'Elasticsearch est en cours d'exécution sur votre machine . Par 
 
 
 ###Étape 5 : Lancer le backend
-```bash
 
 uvicorn backend.app:app --reload
 Le serveur sera accessible à l'adresse suivante : http://127.0.0.1:8000.
@@ -79,7 +79,6 @@ Le serveur sera accessible à l'adresse suivante : http://127.0.0.1:8000.
 
 Démarrez l'application Streamlit pour le frontend :
 
-```bash
 
 streamlit run frontend/app.py
 L'interface utilisateur sera accessible via http://localhost:8501.
