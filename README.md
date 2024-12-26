@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 # ImageSearchEngine
-=======
 # Content-Based Image Retrieval (CBIR)
 
 ## Description
@@ -41,4 +39,47 @@ Clonez le dépôt Git sur votre machine locale :
 ```bash
 git clone https://github.com/yourusername/cbir_project.git
 cd cbir_project
->>>>>>> ff41d0b (Premier commit)
+
+
+
+### Étape 2 : Configuration de l'environnement
+
+
+Créez un environnement virtuel et activez-le :
+```bash
+
+python -m venv venv
+venv\Scripts\activate     # Sur Windows
+
+
+
+### Étape 3 : Installer les dépendances
+
+
+Installez les dépendances pour le backend et le frontend à partir du fichier requirements.txt :
+```bash
+pip install -r requirements.txt
+
+### Étape 4 : Configuration d'Elasticsearch
+
+
+Assurez-vous qu'Elasticsearch est en cours d'exécution sur votre machine . Par défaut, le backend se connecte à localhost:9200.
+
+
+
+###Étape 5 : Lancer le backend
+```bash
+
+uvicorn backend.app:app --reload
+Le serveur sera accessible à l'adresse suivante : http://127.0.0.1:8000.
+
+
+
+###Étape 6 : Lancer le frontend
+
+Démarrez l'application Streamlit pour le frontend :
+
+```bash
+
+streamlit run frontend/app.py
+L'interface utilisateur sera accessible via http://localhost:8501.
