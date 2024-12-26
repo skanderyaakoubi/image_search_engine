@@ -37,9 +37,10 @@ Avant de démarrer, assurez-vous d'avoir les éléments suivants installés :
 Clonez le dépôt Git sur votre machine locale :
 
 ```bash
-git clone https://github.com/yourusername/cbir_project.git
+git clone https://github.com/skanderyaakoubi/cbir_project.git
 cd cbir_project
 
+exit 
 
 
 ### Étape 2 : Configuration de l'environnement
